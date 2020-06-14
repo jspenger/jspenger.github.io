@@ -1,0 +1,69 @@
+body {
+  line-height: 1.4rem;
+  color: #373D3F;
+  font-family: source sans pro;
+}
+
+div.maindiv {
+  background-color: #ececec;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.0rem;
+}
+
+h1, h2, h3, nav, a {
+  font-family: open sans;
+  letter-spacing: 0.10rem;
+}
+
+h1, h2, h3, h4, h5, h6, strong, a {
+  color: #1b2b52;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #8860D0;
+}
+
+a.navbar-brand, a:hover {
+  color: #1b2b52;
+}
+
+nav {
+  border: solid #1b2b52;
+  border-width: 0 0 2px 0;
+  margin-bottom: 0px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav ul li.active
+{
+  text-decoration: underline;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer {
+  border: solid #1b2b52;
+  border-width: 2px 0 0 0;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="google-site-verification" content="a1ADv8ZqFqpPyedHSmCzSp2Z0LnwFklNIdHWR03AIzY" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jonas Spenger">
+    <title>{{ page.author }} | {{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7 col-md-9 col-xs-12 align-self-center maindiv">
+          <nav>
+            <a class="navbar-brand" href="/">Jonas Spenger</a>
+            <ul>
+          		<li {% if "/" == page.url %}class="active"{% endif %}><a href="/">Home</a></li>
+          		<li {% if page.url contains "blog" %}class="active"{% endif %}><a href="/blog/">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="content">
+            {{ content }}
+          </div>
+          <footer>
+            © Jonas Spenger, 2020.
+            <a href="https://github.com/jonasspenger" title="GitHub" <i class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/jonasspenger" title="LinkedIn" <i class="fa fa-linkedin"></a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+permalink: /blog/:categories/:title
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: Jonas Spenger
