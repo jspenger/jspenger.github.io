@@ -6,23 +6,23 @@ layout: default
   {{ content }}
 </div>
 
-<div>
-  There are likely some errors I have missed, please contact me if you find any.<br/>
-  {{page.title}}{% if page.author %} by {{page.author}}{% endif %}, {{ page.date | date: "%B %Y"  }}<br/>
-  {%if page.tags != empty %}Tags: {% for tag in page.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}<br/>{% endif %}
-  Check out more posts in the <a href="/blog">blog archive</a> <br/>
+<div class="meta">
+  <span>{{page.title}}{% if page.author %} by {{page.author}}{% endif %}, {{ page.date | date_to_string }}.</span><br/>
+  {%if page.tags != empty %}<span>Tags: {% for tag in page.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}.</span><br/>{% endif %}
+  <span>There are likely some errors I have missed, please  <a href="/contact">contact</a> me if you find any.</span><br/>
+  <span>Check out more posts in the <a href="/blog">blog archive</a>.</span><br/>
   {% if page.next %}
-    Next post: <span>{{ page.next.date | date: "%B %Y"  }}</span> - <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
+    Next post: {{ page.next.date | date_to_string  }} - <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
     <br/>
   {% endif %}
   {% if page.previous %}
-    Previous post: <span>{{ page.previous.date | date: "%B %Y"  }}</span> - <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+    Previous post: {{ page.previous.date | date_to_string  }} - <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
     <br/>
   {% endif %}
   Most recent posts:
   <ul>
     {% for post in site.posts limit:10 %}
-      <li><span>{{ post.date | date: "%B %Y"  }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li>{{ post.date | date_to_string  }} - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>

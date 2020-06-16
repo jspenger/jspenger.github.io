@@ -67,3 +67,13 @@ footer {
   border: solid #1b2b52;
   border-width: 2px 0 0 0;
 }
+
+code {
+  font-family: source code pro;
+  color: #373D3F;
+}
+
+pre.highlight {
+  background-color: white;
+  padding: 0.25rem;
+}
