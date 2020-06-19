@@ -8,4 +8,4 @@ I am a computer scientist based in Stockholm interested in distributed systems, 
 
 Make sure to check out my [blog](blog).
 
-Find out how to [contact](contact) me, or find out more about me at [github](https://github.com/jonasspenger) or [linkedin](https://www.linkedin.com/in/jonasspenger).
+Find out how to [contact](contact) me.
