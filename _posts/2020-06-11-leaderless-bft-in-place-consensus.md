@@ -2,7 +2,7 @@
 layout: post
 title: Leaderless BFT In-Place Consensus
 date: 2020-06-11
-tags: BFT consensus
+tags: BFT consensus leaderless in-place
 ---
 
 # Leaderless BFT In-Place Consensus
