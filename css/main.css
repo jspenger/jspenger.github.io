@@ -77,3 +77,7 @@ pre.highlight {
   background-color: white;
   padding: 0.25rem;
 }
+
+div.meta {
+  font-style: italic;
+}
