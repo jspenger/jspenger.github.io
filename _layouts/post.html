@@ -7,7 +7,7 @@ layout: default
 </div>
 
 <div class="meta">
-  <span>{{page.title}}{% if page.author %} by {{page.author}}{% endif %}, {{ page.date | date_to_string }}.</span><br/>
+  <span>{{page.title}}{% if page.author %} by {{page.author}}{% endif %}, {{ page.date | date_to_string }}{% if page.lastupdatedon %}, last updated on {{ page.lastupdatedon | date_to_string}}{% endif %}.</span><br/>
   {%if page.tags != empty %}<span>Tags: {% for tag in page.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}.</span><br/>{% endif %}
   <span>There are likely some errors I have missed, please  <a href="/contact">contact</a> me if you find any.</span><br/>
   <span>Check out more posts in the <a href="/blog">blog archive</a>.</span><br/>
