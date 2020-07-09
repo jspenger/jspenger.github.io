@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Leaderless BFT In-Place Consensus
+title: Leaderless In-Place BFT Consensus
 date: 2020-06-11
 tags: BFT consensus leaderless in-place
 ---
 
-# Leaderless BFT In-Place Consensus
+# Leaderless In-Place BFT Consensus
 
 Recently, I came across two papers: Hotstuff [1], a byzantine fault tolerant (BFT) consensus protocol, and RMWPaxos [2], an in-place consensus protocol.
 This blog post is a thought experiment on: **how to combine Hotstuff and RMWPaxos to create a leaderless BFT in-place consensus protocol**.
