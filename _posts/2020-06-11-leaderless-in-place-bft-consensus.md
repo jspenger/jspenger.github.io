@@ -7,12 +7,12 @@ tags: BFT consensus leaderless in-place
 
 # Leaderless In-Place BFT Consensus
 
-Recently, I came across two papers: Hotstuff [1], a byzantine fault tolerant (BFT) consensus protocol, and RMWPaxos [2], an in-place consensus protocol.
+Recently, I came across two papers: [Hotstuff](https://doi.org/10.1145/3293611.3331591) [1], a byzantine fault tolerant (BFT) consensus protocol, and [RMWPaxos](https://doi.org/10.1109/TPDS.2020.2981891) [2], an in-place consensus protocol.
 This blog post is a thought experiment on: **how to combine Hotstuff and RMWPaxos to create a leaderless BFT in-place consensus protocol**.
 For this, I will briefly revisit both protocols, discuss how they can be combined, followed by a short discussion.
 
 ## Hotstuff [1]
-Hotstuff is a BFT consensus protocol (used by Facebook's cryptocurrency LibraBFT) under the partial synchrony system model.
+[Hotstuff](https://doi.org/10.1145/3293611.3331591) is a BFT consensus protocol (used by Facebook's cryptocurrency LibraBFT) under the partial synchrony system model.
 The distinguishing properties of Hotstuff are:
 - **Linear message complexity:** The total size of messages communicated during leader view change and value proposal are linear to the number of replicas O(n).
 - **Optimistic responsiveness:** A leader must only wait for the first n-f responses to create a proposal that will make progress (leader does not wait for a timeout).
@@ -32,7 +32,7 @@ Simultaneous proposals in different stages are pipelined and grouped together.
 The view is changed for every prepare phase thus each proposal has its own view.
 
 ## RMWPaxos [2]
-RMWPaxos is an in-place consensus sequence protocol, assuming the crash-recovery failure model, asynchronous system model with reliable FIFO-ordered message delivery.
+[RMWPaxos](https://doi.org/10.1109/TPDS.2020.2981891) is an in-place consensus sequence protocol, assuming the crash-recovery failure model, asynchronous system model with reliable FIFO-ordered message delivery.
 The protocol describes an atomic RMW (read-modify-write) register.
 The distinguishing properties of RMWPaxos are:
 - **In-place:** The protocol does not allocate or deallocate any variables or use logs.
@@ -93,8 +93,8 @@ Less strict ordering and delivery guarantees of BFT consensus is an interesting 
 There remain open challenges to make the system practical, such as liveness issues and dynamic group membership.
 
 ## References
-- [1] Yin, Maofan, Dahlia Malkhi, Michael K. Reiter, Guy Golan Gueta, and Ittai Abraham. "Hotstuff: Bft consensus in the lens of blockchain." arXiv preprint arXiv:1803.05069 (2018).
-- [2] Skrzypczak, Jan, Florian Schintke, and Thorsten Schütt. "RMWPaxos: Fault-Tolerant In-Place Consensus Sequences." arXiv preprint arXiv:2001.03362 (2020).
+- [1] Yin, Maofan, Dahlia Malkhi, Michael K. Reiter, Guy Golan Gueta, and Ittai Abraham. "Hotstuff: Bft consensus with linearity and responsiveness." In Proceedings of the 2019 ACM Symposium on Principles of Distributed Computing, pp. 347-356. 2019. URL [https://doi.org/10.1145/3293611.3331591](https://doi.org/10.1145/3293611.3331591)
+- [2] Skrzypczak, Jan, Florian Schintke, and Thorsten Schütt. "RMWPaxos: Fault-Tolerant In-Place Consensus Sequences." IEEE Transactions on Parallel and Distributed Systems 31, no. 10 (2020): 2392-2405. URL [https://doi.org/10.1109/TPDS.2020.2981891](https://doi.org/10.1109/TPDS.2020.2981891)
 - [3] Castro, Miguel, and Barbara Liskov. "Practical Byzantine fault tolerance." In OSDI, vol. 99, no. 1999, pp. 173-186. 1999.
 - [4] Buchman, Ethan, Jae Kwon, and Zarko Milosevic. "The latest gossip on BFT consensus." arXiv preprint arXiv:1807.04938 (2018).
 - [5] Guerraoui, Rachid, Petr Kuznetsov, Matteo Monti, Matej Pavlovič, and Dragos-Adrian Seredinschi. "The consensus number of a cryptocurrency." In Proceedings of the 2019 ACM Symposium on Principles of Distributed Computing, pp. 307-316. 2019.
