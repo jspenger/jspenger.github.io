@@ -21,7 +21,7 @@ In this thesis, we study a reduction of this problem: *tamper-resistant broadcas
 * **Event 1** *Broadcast \| message*: Broadcast a message to all other processes.
 * **Event 2** *Deliver \| p, message*: Deliver a message broadcast by process *p*.
 * **Event 3** *Verify \| p, message*: Verify if a message has been tampered with.
-* **Event 4** *VerifyReturn \| “Valid”/”NotValid”, proof*:  Return value for verification request.
+* **Event 4** *VerifyReturn \| “Valid”/”NotValid”, proof*: Return value for verification request.
 * **Property 1** *Tamper-resistant*: 1) the probabilistic (with high probability) protection of the broadcast messages and the delivered message history against byzantine behaviour, and 2) the probabilistic verifiability[^1] of the delivered messages.
 
 Consequently, the TRBPs can be used to implement TRRSMs. The environment model of the TRBP can be matched with the required environment model of the TRRSM. The safety and liveness properties of the TRBP can be matched with the required consistency model [5] of the TRRSM.
@@ -59,6 +59,9 @@ Building blockchain-based applications is difficult, and requires complex intera
 
 We recommend further work on the possibilities and limitations of tamper-resistant and tamper-proof applications, increasing the performance of systems, exploring the space of properties and environments, for example, a convincing case can be made for a reliable and causal-order blockchain for the public environment, or for a reliable byzantine broadcast [14] for decentralized online payments.
 
+## Acknowledgements
+Much of the theory, notation, and style of this thesis surrounding broadcast and consensus is based on the book *Introduction to Reliable and Secure Distributed Programming* by Cachin, Guerraoui, and Rodrigues [2]. An important source on the Bitcoin blockchain was the book *Mastering Bitcoin: Programming the open blockchain* by Antonopoulos [15], and the original bitcoin paper *Bitcoin:A Peer-to-Peer Electronic Cash System* by Nakamoto [3]. Inspiration for studying blockchain abstractions stemmed from reading about the Virtualchain, described in *Blockstack: A global naming and storage system secured by blockchains* by Ali, Nelson, Shea, and Freedman [10]. The motivation for this work originated from our ongoing work on a blockchain-based file system at the Zuse Institute Berlin [4].
+
 ## References
 - [1] Jonas Spenger. Using Blockchain for Tamper-Proof Broadcast Protocols. 2020. URL [http://nbn-resolving.de/urn:nbn:de:0297-zib-79165](http://nbn-resolving.de/urn:nbn:de:0297-zib-79165).
 - [2] Christian Cachin, Rachid Guerraoui, and Luis Rodrigues. Introduction to reliable and secure distributed programming. Springer Science & Business Media, 2011.
@@ -74,6 +77,7 @@ We recommend further work on the possibilities and limitations of tamper-resista
 - [12] Wayne Vaughan, Jason Bukowski, Shawn Wilkinson. Chainpoint - a scalable protocol for anchoring data in the blockchain and generating blockchain receipts v2.1.0, 2016, Last visited 2020-01-17. URL https://github.com/chainpoint/whitepaper/blob/master/chainpoint_white_paper.pdf.
 - [13] Thomas Renner, Johannes Müller, and Odej Kao. Endolith: A blockchain-based framework to enhance data retention in cloud storages. In 2018 26th Euromicro International Conference on Parallel, Distributed and Network-based Processing (PDP), pages 627–634. IEEE, 2018.
 - [14] Daniel Collins, Rachid Guerraoui, Jovan Komatovic, Matteo Monti, Athanasios Xygkis, Matej Pavlovic, Petr Kuznetsov, Yvonne-Anne Pignolet, Dragos-Adrian Seredinschi, and Andrei Tonkikh. Online Payments by Merely Broadcasting Messages (Extended Version). arXiv preprint arXiv:2004.13184 (2020).
+- [15] Andreas M Antonopoulos. Mastering Bitcoin: Programming the open blockchain. O’Reilly Media, Inc., 2017.
 
 ## Notes
 [^1]: A verification request returns ”Valid” (with high probability), if the message has not been tampered with and is part of the untampered message history, else ”NotValid”.
