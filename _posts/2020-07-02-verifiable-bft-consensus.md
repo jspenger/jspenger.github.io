@@ -3,7 +3,7 @@ layout: post
 title: Verifiable BFT Consensus
 date: 2020-07-02
 tags: verifiable BFT consensus
-lastupdatedon: 2020-07-09
+lastupdatedon: 2020-09-08
 ---
 
 # Verifiable Byzantine Fault Tolerant Consensus
@@ -93,3 +93,8 @@ A possibility is to further explore probabilistic verifiability and probabilisti
 - [5] Nakamoto, Satoshi. "Bitcoin: A peer-to-peer electronic cash system." (2008).
 - [6] Saito, Kenji, and Hiroyuki Yamada. "What’s so different about blockchain?—Blockchain is a probabilistic state machine." In 2016 IEEE 36th International Conference on Distributed Computing Systems Workshops (ICDCSW), pp. 168-175. IEEE, 2016.
 - [7] Collins, Daniel, Rachid Guerraoui, Jovan Komatovic, Matteo Monti, Athanasios Xygkis, Matej Pavlovic, Petr Kuznetsov, Yvonne-Anne Pignolet, Dragos-Adrian Seredinschi, and Andrei Tonkikh. "Online Payments by Merely Broadcasting Messages (Extended Version)." arXiv preprint arXiv:2004.13184 (2020).
+
+## Update
+Since writing this post I have found other articles on this topic that may be worth reading:
+- Setty, Srinath, Sebastian Angel, Trinabh Gupta, and Jonathan Lee. "Proving the correct execution of concurrent services in zero-knowledge." In 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18), pp. 339-356. 2018.
+- Setty, Srinath, Sebastian Angel, and Jonathan Lee. "Verifiable state machines: Proofs that untrusted services operate correctly." ACM SIGOPS Operating Systems Review 54, no. 1 (2020): 40-46.
