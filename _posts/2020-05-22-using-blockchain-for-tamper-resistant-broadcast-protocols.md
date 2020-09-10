@@ -2,7 +2,7 @@
 layout: post
 title: Using Blockchain for Tamper-Resistant Broadcast Protocols
 date: 2020-05-22
-tags: BFT consensus blockchain tamper-resistant broadcast
+tags: BFT consensus blockchain tamper-resistant broadcast bitcoin
 lastupdatedon: 2020-08-24
 ---
 
