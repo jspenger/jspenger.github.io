@@ -8,8 +8,7 @@ lastupdatedon: 2021-02-03
 
 # Zoom Secure Multi-Party Computation Study Group
 
-**When and where:** Wednesdays, 12:00 PM UCT, @ zoom, starting on February 10, 2021. Find out more in our [Telegram group](https://t.me/joinchat/Ha31otCWimD3lWN5 ), and keep up-to-date by subscribing to the [calendar](https://calendar.google.com/calendar/u/1?cid=NHJmZTk0cnUxMWZhZ3U0a3Z0YzhkcmFwaXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ
-).
+**When and where:** Wednesdays, 12:00 PM UCT, @ zoom, starting on February 10, 2021. Find out more in our [Telegram group](https://t.me/joinchat/Ha31otCWimD3lWN5).
 
 **What:** We will cover the foundations of [MPC](https://en.wikipedia.org/wiki/Secure_multi-party_computation), and later dive-deep on interesting hot topics.
 
