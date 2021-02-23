@@ -15,7 +15,7 @@ lastupdatedon: 2021-02-23
 **Format:** Each week we will meet for an open discussion of a paper/reference/topic. This will be recorded so you can watch it if you missed attending. We expect everyone to prepare by reading the paper/reference, and prepare some questions for the discussion.
 
 **Study plan:**
-* Week 1: Yao's Garbled Circuits
+* Week 1: [Yao's Garbled Circuits](yaos-garbled-circuits)
 * Week 2: BGW Protocol and Beaver Triples
 * Week 3: SPDZ (malicious BGW)
 * Week 4: TBD
