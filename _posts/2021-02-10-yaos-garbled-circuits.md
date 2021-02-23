@@ -114,7 +114,7 @@ definition of real/ideal MPC together with simulation proofs [4].
 * [4] Lindell, Yehuda. "How to simulate it–a tutorial on the simulation proof technique." Tutorials on the Foundations of Cryptography (2017): 277-346. URL [https://eprint.iacr.org/2016/046](https://eprint.iacr.org/2016/046)
 
 ## Other Helpful References:
-* http://cyber.biu.ac.il/event/the-5th-biu-winter-school/
-* https://en.wikipedia.org/wiki/Secure_multi-party_computation
-* https://www.esat.kuleuven.be/cosic/blog/introduction-to-garbled-circuit/
-* https://www.youtube.com/watch?v=FTxh908u9y8
+* [http://cyber.biu.ac.il/event/the-5th-biu-winter-school/](http://cyber.biu.ac.il/event/the-5th-biu-winter-school/)
+* [https://en.wikipedia.org/wiki/Secure_multi-party_computation](https://en.wikipedia.org/wiki/Secure_multi-party_computation)
+* [https://www.esat.kuleuven.be/cosic/blog/introduction-to-garbled-circuit/](https://www.esat.kuleuven.be/cosic/blog/introduction-to-garbled-circuit/)
+* [https://www.youtube.com/watch?v=FTxh908u9y8](https://www.youtube.com/watch?v=FTxh908u9y8)
