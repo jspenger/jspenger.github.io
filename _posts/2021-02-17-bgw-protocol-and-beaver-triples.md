@@ -8,7 +8,7 @@ lastupdatedon: 2021-02-17
 
 # BGW Protocol and Beaver Triples
 
-For this week in our [Zoom Meetup](zoom-secure-multi-party-computation-study-group) we discussed the BGW protocol and Beaver triples [1, 2].
+In this week's [Zoom Meetup](zoom-secure-multi-party-computation-study-group) we discussed the BGW protocol and Beaver triples [1, 2].
 You can watch the virtual meetup of the presentation followed by open discussion:
 
 <div style="text-align: center;">
@@ -20,8 +20,8 @@ These are my personal study notes, so please refer to the references to verify a
 ## Introduction
 The BGW (Ben-Or, Goldwasser, Widgerson) protocol has historical importance as one of the first secure multi-party protocols from 1988 [2].
 The protocol allows us to securely compute addition-, multiplication-by-constant, and multiplication-gates over a [field](https://en.wikipedia.org/wiki/Field_(mathematics)).
-The protocol relies on [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing), originally for shamir secret sharing, but the presented techniques can be applied to any linear secret-sharing scheme (LSSS).
-The idea is to use the additive homomorphism property of the LSSS, such that additions and multiplication by constant are non-interactive operations.
+The protocol relies on [secret sharing](https://en.wikipedia.org/wiki/Secret_sharing), originally for Shamir secret sharing, but the presented techniques can be applied to any linear secret-sharing scheme (LSSS).
+The idea is to use the additive homomorphism property of the LSSS, such that additions and multiplication-by-constant are non-interactive operations.
 However, as we will see, multiplication of two secrets still requires interaction.
 
 ## Summary
@@ -42,7 +42,7 @@ However, as we will see, multiplication of two secrets still requires interactio
 ## Secret-Sharing Abstraction
 The BGW protocol together with Beaver triples allows us to abstract the secret-sharing scheme [1, Sect. 3.4], such that we can use any LSSS with the following properties:
 * Additive homomorphism
-  * Given two shared secrets `[x], [y]`, and a publicly known value `z`, the parties can compute the following without interaction: `[x + y]`, `[x + z]`, `[x * z]`.
+  * Given two shared secrets `[x], [y]`, and a publicly known value `z`, the parties can compute the following without interaction: `[x + y]`, `[x + z]`, `[x * z]`. Beaver triples (see below) are used for multiplication of two secrets.
 * Opening
   * Given a shared secret `[x]`, the parties can through collaboration reveal the value `x`, i.e. reconstruct the plain-text value.
 * Privacy
@@ -63,8 +63,8 @@ We defer the discussion around secret-sharing schemes to another time.
 Beaver triples are generated during the preprocessing phase.
 There are multiple ways of generating beaver triples.
 A naive way of generating the triples would to generate two random secret-sharings and multiplying them:
-* Generate random shared secrets `[a] <- randomsecret()`, `[b] <- randomsecret()`, for additive and for shamir, it is sufficient for each party to `P_i` to sample a random value as their share `[a]_i <- random()` and `[b]_i <- random()` without interaction.
-* Compute `[c] = [a] * [b]` through secure multiplication protocol.
+* Generate random shared secrets `[a] <- randomsecret()`, `[b] <- randomsecret()`, for additive and for Shamir, it is sufficient for each party to `P_i` to sample a random value as their share `[a]_i <- random()` and `[b]_i <- random()` without interaction.
+* Compute `[c] = [a] * [b]` through secure multiplication protocol (there are faster methods using oblivious transfer).
 
 Beaver triples can be used for the multiplication of two shared secrets:
 * Input: Beaver triple `[a], [b], [c]`, secret-sharings `[x], [y]`. Output: `[x * y]`
