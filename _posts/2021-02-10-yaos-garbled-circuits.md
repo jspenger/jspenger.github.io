@@ -9,6 +9,8 @@ lastupdatedon: 2021-02-10
 # Yao's Garbled Circuits
 For week 1 of the [Zoom MPC Study Group](zoom-secure-multi-party-computation-study-group) we discussed Yao's Garbled Circuits, using section 3.1 from the book [A Pragmatic Introduction to Secure Multi-Party Computation](https://securecomputation.org) by David Evans, Vladimir Kolesnikov and Mike Rosulek [1].
 
+These are my personal study notes, so please refer to the references to verify any information in this post. The content of this post is mostly based on [1].
+
 ## Introduction
 Secure two-party computation was introduced in 1982 by Andrew Yao in the seminal paper "Protocols for secure computations" [2].
 The work was motivated by what has come to be known as [Yao's Millionaires' Problem](https://en.wikipedia.org/wiki/Yao%27s_Millionaires%27_problem).
@@ -101,7 +103,7 @@ How does it compare to other protocols?
 We are uncertain how garbled circuits stack up against other forms of secure multi-party computation.
 What we have found so far are statements that for certain problems garbled circuits may be more efficient, whereas for others arithmetic circuit protocols such as BGW [1] may be more efficient.
 
-## Follow-up
+## Follow-up Suggestions
 Things we want to cover in the future:
 other circuit garbling techniques;
 implementation of garbled circuits;
