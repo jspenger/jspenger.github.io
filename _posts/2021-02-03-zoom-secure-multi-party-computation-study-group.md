@@ -18,5 +18,5 @@ Each week we will meet for an open discussion of a paper/reference/topic. This w
 ## Study Plan
 * Week 1: [Yao's Garbled Circuits](yaos-garbled-circuits)
 * Week 2: [BGW Protocol and Beaver Triples](bgw-protocol-and-beaver-triples)
-* Week 3: SPDZ (malicious BGW)
+* Week 3: [SPDZ (malicious BGW)](spdz-malicious-bgw-mpc-protocol)
 * Week 4: TBD
