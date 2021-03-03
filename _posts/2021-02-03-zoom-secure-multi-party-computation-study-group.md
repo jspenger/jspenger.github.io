@@ -19,4 +19,6 @@ Each week we will meet for an open discussion of a paper/reference/topic. This w
 * Week 1: [Yao's Garbled Circuits](yaos-garbled-circuits)
 * Week 2: [BGW Protocol and Beaver Triples](bgw-protocol-and-beaver-triples)
 * Week 3: [SPDZ (malicious BGW)](spdz-malicious-bgw-mpc-protocol)
-* Week 4: TBD
+* Week 4: [GMW Protocol](gmw-protocol)
+* Week 5: Oblivious Transfer and Oblivious Transfer Extension
+* Week 6: TBD
