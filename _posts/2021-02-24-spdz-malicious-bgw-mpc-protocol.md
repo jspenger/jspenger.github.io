@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SPDZ Malicious BGW MPC Protocol
+title: "MPC Study Group: SPDZ Malicious BGW MPC Protocol"
 date: 2021-02-24
 tags: SPDZ Malicious BGW MPC Secure Multi-Party Computation Zoom
 lastupdatedon: 2021-02-24
 ---
 
-# SPDZ Malicious BGW MPC Protocol
+# MPC Study Group: SPDZ Malicious BGW MPC Protocol
 
 In this week's [Zoom MPC Study Group](zoom-secure-multi-party-computation-study-group) we read about the SPDZ protocol, a malicious-secure BGW variant [1, 2].
 You can watch the virtual meetup of the presentation followed by the open discussion:
@@ -18,11 +18,11 @@ You can watch the virtual meetup of the presentation followed by the open discus
 These are my personal study notes, so please refer to the references to verify any information in this post. The content of this post is mostly based on [1, Section 6.6].
 
 ## Introduction
-Why is the [vanilla BGW protocol](bgw-protocol-and-beaver-triples) not secure against malicious adversaries?
+Why is the vanilla [BGW](bgw-protocol-and-beaver-triples)  protocol not secure against malicious adversaries?
 In the previous week's session we only considered semi-honest secure sharings.
 If we instead consider a malicious-secure sharing, that has certain properties, we will find that the BGW protocol is maliciously secure.
 
-The BGW protocol is malicious-secure if we have a sharing mechanism with the following properties [1] (compare this to the properties from the secret sharing abstraction in [vanilla BGW](bgw-protocol-and-beaver-triples), differences highlighted in bold):
+The BGW protocol is malicious-secure if we have a sharing mechanism with the following properties [1] (compare this to the properties from the secret sharing abstraction in [BGW](bgw-protocol-and-beaver-triples), differences highlighted in bold):
 * Additive homomorphism:
   * Given two shared secrets `[x]`, `[y]`, and a publicly known value `z`, the parties can compute the following without interaction: `[x + y]`, `[x + z]`, `[x * z]`.
 * Privacy:
@@ -93,3 +93,7 @@ Would it be possible to find the identity of the party that has aborted?
 
 ## Follow-up Suggestions
 Other malicious-secure secret sharings; complexity comparison of MPC protocols; MPC with identifiable abort.
+
+## References
+* [1] Evans, David, Vladimir Kolesnikov, and Mike Rosulek. "A pragmatic introduction to secure multi-party computation." Foundations and Trends® in Privacy and Security 2.2-3 (2017). [URL](https://securecomputation.org/)
+* [2] Damgård, Ivan, Valerio Pastro, Nigel Smart, and Sarah Zakarias. "Multiparty computation from somewhat homomorphic encryption." In Annual Cryptology Conference, pp. 643-662. Springer, Berlin, Heidelberg, 2012. [URL](https://eprint.iacr.org/2011/535)

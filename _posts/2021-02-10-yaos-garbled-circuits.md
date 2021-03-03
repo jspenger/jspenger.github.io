@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Yao's Garbled Circuits
+title: "MPC Study Group: Yao's Garbled Circuits"
 date: 2021-02-10
 tags: Yao's Garbled Circuits MPC Secure Multi-Party Computation Semi-Honest Zoom
 lastupdatedon: 2021-02-10
 ---
 
-# Yao's Garbled Circuits
+# MPC Study Group: Yao's Garbled Circuits
 For week 1 of the [Zoom MPC Study Group](zoom-secure-multi-party-computation-study-group) we discussed Yao's Garbled Circuits, using section 3.1 from the book [A Pragmatic Introduction to Secure Multi-Party Computation](https://securecomputation.org) by David Evans, Vladimir Kolesnikov and Mike Rosulek [1].
 
 These are my personal study notes, so please refer to the references to verify any information in this post. The content of this post is mostly based on [1].

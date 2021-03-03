@@ -1,12 +1,12 @@
 ---
 layout: post
-title: BGW Protocol and Beaver Triples
+title: "MPC Study Group: BGW Protocol and Beaver Triples"
 date: 2021-02-17
 tags: BGW MPC Secure Multi-Party Computation Semi-Honest Zoom
 lastupdatedon: 2021-02-17
 ---
 
-# BGW Protocol and Beaver Triples
+# MPC Study Group: BGW Protocol and Beaver Triples
 
 In this week's [Zoom Meetup](zoom-secure-multi-party-computation-study-group) we discussed the BGW protocol and Beaver triples [1, 2].
 You can watch the virtual meetup of the presentation followed by open discussion:
