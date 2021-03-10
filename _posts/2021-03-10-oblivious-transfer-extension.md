@@ -20,8 +20,8 @@ tex2jax: {
 In this week's [Zoom Meetup](zoom-secure-multi-party-computation-study-group) we discussed oblivious transfer and the oblivious transfer extension [1, 2].
 You can watch the virtual meetup (it was a great presentation):
 
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2YaCoRokdpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/2YaCoRokdpc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-iframe"></iframe>
 </div>
 
 These are my personal study notes, so please refer to the references to verify any information in this post. The content of this post is mostly based on [1].

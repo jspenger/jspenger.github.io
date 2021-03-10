@@ -11,8 +11,8 @@ lastupdatedon: 2021-02-24
 In this week's [Zoom MPC Study Group](zoom-secure-multi-party-computation-study-group) we read about the SPDZ protocol, a malicious-secure BGW variant [1, 2].
 You can watch the virtual meetup of the presentation followed by the open discussion:
 
-<div style="text-align: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hUrBS8TloFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/hUrBS8TloFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-iframe"></iframe>
 </div>
 
 These are my personal study notes, so please refer to the references to verify any information in this post. The content of this post is mostly based on [1, Section 6.6].
