@@ -119,11 +119,11 @@ Thus follows:
 * If $r_j = 0$ then $e_o = H(q_j) \oplus x_j = H(t_j) \oplus x_j$
 
 Knowing this the receiver can in step (6) decrypt one of the two $e$s:
-* If $r_j = 0$ then:
+* If $r_j = 1$ then:
 
 $$
 \begin{aligned}
-H(t_j) \oplus e_0 &= H(t_j) \oplus H(q_j) \oplus x_j \\
+H(t_j) \oplus e_0 &= H(t_j) \oplus H(q_j \oplus s) \oplus x_j \\
 &= H(t_j) \oplus H(t_j \oplus s \oplus s) \oplus x_j)  \oplus x_j \\
 &= H(t_j) \oplus H(t_j) \oplus x_j \\
 &= x_j
