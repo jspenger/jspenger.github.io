@@ -123,14 +123,14 @@ Knowing this the receiver can in step (6) decrypt one of the two $e$s:
 
 $$
 \begin{aligned}
-H(t_j) \oplus e_0 &= H(t_j) \oplus H(q_j \oplus s) \oplus x_j \\
+H(t_j) \oplus e_1 &= H(t_j) \oplus H(q_j \oplus s) \oplus x_j \\
 &= H(t_j) \oplus H(t_j \oplus s \oplus s) \oplus x_j)  \oplus x_j \\
 &= H(t_j) \oplus H(t_j) \oplus x_j \\
 &= x_j
 \end{aligned}
 $$
 
-* If $r_j = 0$ then similarly: $H(t_j) \oplus e_1 = x_j$
+* If $r_j = 0$ then similarly: $H(t_j) \oplus e_0 = x_j$
 
 It is clear from the protocol that it only requires $k$ executions of a public-key based OT in step (4), generating a total of $m \gg k$ oblivious transfers:
 * Number of public-key operations: $O(k)$.
