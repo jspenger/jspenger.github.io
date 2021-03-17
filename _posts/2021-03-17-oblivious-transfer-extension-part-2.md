@@ -90,9 +90,52 @@ Let us try the case when $r_j = 0$ (case $r_j = 1$ is similar):
 * $x_j = x_j^0 \oplus H(j, \oplus t_j) \oplus H(j, t_j)$
 * $x_j = x_j^0$  // qed
 
+## Why is Protocol 1 Insecure Against Malicious Adversaries?
+Protocol 1 is secure for a malicious sender and semi-honest receiver [1].
+But it is not clear why it is insecure for a malicious receiver.
+Although it is mentioned in [1] that a malicious receiver $R$ may choose different $r$ when computing $u^i$ in step (2 a) fig. 1, it is not elaborated any further how such an attack could work.
+Luckily this attack is described in Ishai et al. (2003) [2].
+What we present here is an adapted version of the attack for our notation.
+The malicious receiver changes the $j'$th bit of $r$ from 0 to 1, for the $i'$th computation of $u^i$.
+Together with the assumption that the receiver knows the of the $j'$th input-pair, the receiver can learn the $i'$th bit of $s$:
+* Let us assume that the malicious receiver $R$ has knowledge of an input pair $(x_{j'}^0, x_{j'}^1)$ for a $j' \in \\{0, ..., m\\}$, and wlog $r_{j'} = 0$, row $j \in \\{0, ..., m\\}$, column $i \in \\{0, ..., k\\}$.
+* Note that $R$ has knowledge of $t_i'$ from the protocol execution.
+* In (2 a):
+  * For all $i \neq i': u^i = t^i \oplus G(k_i^1) \oplus r$
+  * Note that $r$ is $0$ at index $j'$, i.e. $r_{j'} = 0$
+  * For $i': u^{i'} = t^{i'} \oplus G(k_{i'}^1) \oplus r'$, where $r'$ is $r$ but with a $1$ at index $j'$:
+    * For all $j \neq j': r'_j = r_j$  
+    * For $j'$: $r'_{j'} = 1$
+* In (2 d):
+  * Note that:
+    * For all $j \neq j': q_j = (\\{r_j\\}^k * s) \oplus t_j$
+    * For $j'$:
+      * $q_{j'} = ( \hat{r} * s) \oplus t_{j'}$
+      * where $\hat{r} = [0, ..., 0, 1, 0, ..., 0]$ is 0 at all indices except at index $i'$ where $\hat{r}_{i'} = 1$.
+      * $q_{j'} \oplus s = ( \hat{r} * s) \oplus t_{j'} \oplus s$
+      * $= ( [0, ..., 0, 1, 0, ..., 0] * s) \oplus t_{j'} \oplus s$
+      * $= [0, ..., 0, s_{i'}, 0, ..., 0] \oplus t_{j'} \oplus s$
+      * $= [s_1, ..., s_{i'-1}, 0, s_{i'+1}, ..., s_{k}] \oplus t_{j'}$
+  * If $x_{j'}^1 = y_{j'}^1 \oplus H(j', t_{j'})$ then **output** $s_{j'} = 0$.
+  * If $x_{j'}^1 = y_{j'}^1 \oplus H(j', t_{j'} \oplus [0, ..., 0, 1, 0, ..., 0])$ then **output** $s_{j'} = 1$.
+  * Note:
+    * Where $[0, ..., 0, 1, 0, ..., 0]$ is the vector of zeroes except at index $j'$.
+    * Note that the sender sets $y_{j'}^1 =  x_{j'}^1 \oplus H(j', q_{j'} \oplus s)$
+    * Correctness argument:
+      * If $s_{i'} = 0$ then:
+        * $y_{j'}^1 \oplus H(j', t_{j'})$
+        * $= x_{j'}^1 \oplus H(j', q_{j'} \oplus s) \oplus H(j', t_{j'})$
+        * $= x_{j'}^1 \oplus H(j', [s_1, ..., s_{i'-1}, 0, s_{i'+1}, ..., s_{k}] \oplus t_{j'} \oplus s) \oplus H(j', t_{j'})$  // replace $ q_{j'}$
+        * $= x_{j'}^1 \oplus H(j', [0, ..., 0, s_{i'}, 0, ..., 0] \oplus t_{j'} ) \oplus H(j', t_{j'})$
+        * $= x_{j'}^1 \oplus H(j', [0, ..., 0, 0, 0, ..., 0] \oplus t_{j'} ) \oplus H(j', t_{j'})$  // because $s_{i'} = 0$
+        * $= x_{j'}^1 \oplus H(j', \oplus t_{j'} ) \oplus H(j', t_{j'})$
+        * $= x_{j'}^1$ qed.
+      * Similar argument for $s_{i'} = 1$
+
+
 ## Follow-up
-There were other questions that were unanswered: 1) why is the semi-honest protocol (fig. 1) insecure against malicious adversaries, and what are some exemplary attacks of the receiver, in particular how can the receiver gain information from using a different $r$ in step (2 a); 2) why is it sufficient to ensure the consistency of $r$ for the malicious security model;
-3) how does the malicious security protocol in [1] work.
+There were other questions that were unanswered: 1) why is it sufficient to ensure the consistency of $r$ for the malicious security model;
+2) how does the malicious security protocol in [1] work.
 
 ## References
 * [1] Asharov, G., Lindell, Y., Schneider, T. and Zohner, M., 2015, April. More efficient oblivious transfer extensions with security for malicious adversaries. In Annual International Conference on the Theory and Applications of Cryptographic Techniques (pp. 673-701). Springer, Berlin, Heidelberg. [URL](https://eprint.iacr.org/2015/061)
