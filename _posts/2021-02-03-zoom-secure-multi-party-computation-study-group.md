@@ -22,4 +22,5 @@ Each week we will meet for an open discussion of a paper/reference/topic. This w
 * Week 4: [GMW Protocol](gmw-protocol)
 * Week 5: [Oblivious Transfer and Oblivious Transfer Extension](oblivious-transfer-extension)
 * Week 6: [Oblivious Transfer Extension Part 2](oblivious-transfer-extension-part-2)
-* Week 7: TBD
+* Week 7: [Oblivious Transfer Extension Part 3](oblivious-transfer-extension-part-3)
+* Week 8: TBD
