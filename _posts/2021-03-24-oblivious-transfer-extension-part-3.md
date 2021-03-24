@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "MPC Study Group: Oblivious Transfer Extension Part 3"
-date: 2021-03-17
+date: 2021-03-24
 tags: Oblivious Transfer Extension Secure Multi-Party Computation Malicious Zoom
-lastupdatedon: 2021-03-17
+lastupdatedon: 2021-03-24
 ---
 
 <script type="text/x-mathjax-config">
