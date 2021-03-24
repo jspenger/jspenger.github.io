@@ -42,7 +42,7 @@ Notation:
 * $[x]$ is a secret sharing of $x$
 * $[x]_i$ is party $P_i$'s share of the secret
 
-Secret sharing scheme: the protocol uses a full-threshold `t=n` secret-sharing scheme, semi-homomorphic, additive modulo 2:
+Secret sharing scheme: the protocol uses a full-threshold `t=n` secret-sharing scheme, additive homomorphic, additive modulo 2:
 * $[x]_i \in \\{0, 1\\}, x \in \\{0, 1\\}$
 * $x = [x]_1 \oplus [x]_2 \oplus … \oplus [x]_n$
 
