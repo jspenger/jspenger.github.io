@@ -22,6 +22,10 @@ In this week's [zoom meetup](zoom-secure-multi-party-computation-study-group) we
 We got stuck on the description of protocol 1 [1], which is the semi-honest secure OT extension protocol of Ishai et al. (2003) [2] (per notation from [3]) that we discussed last week, albeit with some optimizations.
 What we found was that the notation differed from what we discussed in [last week's session](oblivious-transfer-extension).
 
+<div class="youtube-container">
+<iframe src="https://www.youtube.com/embed/MAttuobqks0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-iframe"></iframe>
+</div>
+
 These are some personal study notes to clear up some of the confusion between the description from [1] and [last week](oblivious-transfer-extension).
 
 ## Differences and Similarities
