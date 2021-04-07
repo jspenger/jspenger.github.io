@@ -3,7 +3,7 @@ layout: post
 title: Zoom Secure Multi-Party Computation Study Group
 date: 2021-02-03
 tags: MPC Secure Multi-Party Computation Cryptography Distributed Systems Decentralized Systems
-lastupdatedon: 2021-02-23
+lastupdatedon: 2021-04-07
 ---
 
 # Zoom Secure Multi-Party Computation Study Group
