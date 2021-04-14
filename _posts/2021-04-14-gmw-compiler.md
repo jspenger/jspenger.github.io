@@ -16,7 +16,7 @@ tex2jax: {
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-# MPC Study Group: Cut-and-Choose
+# MPC Study Group: GMW Compiler
 In this week's [zoom meetup](zoom-secure-multi-party-computation-study-group) we looked at the GMW compiler [GMW87; EKR17, §6.5]. We started the session by watching a video on [GMW compiler](https://www.youtube.com/watch?v=kSrTHBPLsgE) presented by Yehuda Lindell.
 
 <div class="youtube-container">
