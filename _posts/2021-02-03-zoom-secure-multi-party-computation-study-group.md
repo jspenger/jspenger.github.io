@@ -26,4 +26,5 @@ Each week we will meet for an open discussion of a paper/reference/topic. This w
 * Week 8: [Authenticated Garbling](authenticated-garbling)
 * Week 9: [Cut-and-Choose](cut-and-choose)
 * Week 10: [GMW Compiler](gmw-compiler)
-* Week 11: TBD
+* Week 11: [How-To-Simulate-It](how-to-simulate-it)
+* Week 12: TBD

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "MPC Study Group: GMW Compiler"
-date: 2021-04-07
+date: 2021-04-14
 tags: GMW Compiler Secure Multi-Party Computation Malicious Zoom
-lastupdatedon: 2021-04-07
+lastupdatedon: 2021-04-14
 ---
 
 <script type="text/x-mathjax-config">
