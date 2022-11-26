@@ -24,17 +24,18 @@ h4, h5, h6 {
   font-size: 1.0rem;
 }
 
-h1, h2, h3, nav, a {
+h1, h2, h3, nav {
   font-family: open sans;
   letter-spacing: 0.10rem;
 }
 
-h1, h2, h3, h4, h5, h6, strong, a {
+h1, h2, h3, h4, h5, h6, strong {
   color: #1b2b52;
   font-weight: bold;
 }
 
 a {
+  font-family: open sans;
   text-decoration: none;
   color: #8860D0;
 }
@@ -47,6 +48,7 @@ nav {
   border: solid #1b2b52;
   border-width: 0 0 2px 0;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 nav ul {
