@@ -11,7 +11,7 @@ layout: default
   {%if page.tags != empty %}<span>Tags: {% for tag in page.tags %}{{ tag }}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}.</span><br/>{% endif %}
   <span>There are likely some errors I have missed, please  <a href="/contact">contact</a> me if you find any.</span><br/>
   <span>Check out more posts in the <a href="/blog">blog archive</a>.</span><br/>
-  {% if page.next %}
+  <!-- {% if page.next %}
     Next post: {{ page.next.date | date_to_string  }} - <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
     <br/>
   {% endif %}
@@ -24,5 +24,5 @@ layout: default
     {% for post in site.posts limit:10 %}
       <li>{{ post.date | date_to_string  }} - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
+  </ul> -->
 </div>
