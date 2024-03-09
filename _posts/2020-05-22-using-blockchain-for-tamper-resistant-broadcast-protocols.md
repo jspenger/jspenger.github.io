@@ -70,7 +70,7 @@ Much of the theory, notation, and style of this thesis surrounding broadcast and
 - [5] Paolo Viotti and Marko Vukolic. Consistency in non-transactional distributed storage systems. ACM Computing Surveys (CSUR), 49(1):1–34, 2016.
 - [6] Andrew Sward, Ivy Vecna, and Forrest Stonedahl. Data insertion in bitcoin’s blockchain. Ledger, 3, 2018.
 - [7] Kenji Saito and Hiroyuki Yamada. What’s so different about blockchain? — blockchain is a probabilistic state machine. In 2016 IEEE 36th International Conference on Distributed Computing Systems Workshops (ICDCSW), pages 168–175. IEEE, 2016.
-- [8] Source code, Last visited 2020-04-07. URL [https://github.com/jonasspenger/mscthesis](https://github.com/jonasspenger/mscthesis). Used commit short hash 1db6931.
+- [8] Source code, Last visited 2020-04-07. URL [https://github.com/jspenger/mscthesis](https://github.com/jspenger/mscthesis). Used commit short hash 1db6931.
 - [9] Fran Casino, Thomas K Dasaklis, and Constantinos Patsakis. A systematic literature review of blockchain-based applications: current status, classification and open issues. Telematics and Informatics, 36:55–81, 2019.
 - [10] Muneeb Ali, Jude Nelson, Ryan Shea, and Michael J Freedman. Blockstack: A global naming and storage system secured by blockchains. In 2016 USENIX Annual Technical Conference, pages 181–194, 2016.
 - [11] Factom - Business Processes Secured by Immutable Audit Trails on the Blockchain, Last visited 2020-01-17. URL https://www.factom.com/assets/docs/Factom_Whitepaper_v1.2.pdf
