@@ -1,11 +1,12 @@
 body {
   line-height: 1.4rem;
-  color: #373D3F;
+  color: #000000;
+  background-color: #ececec;
   font-family: source sans pro;
 }
 
 div.maindiv {
-  background-color: #ececec;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -30,34 +31,44 @@ h1, h2, h3, nav {
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: #1b2b52;
+  color: #202020;
   font-weight: bold;
 }
 
 a {
-  font-family: open sans;
   text-decoration: none;
-  color: #8860D0;
+  color: #d89f0d;
 }
 
-a.navbar-brand, a:hover {
-  color: #1b2b52;
+a.navbar-brand {
+  color: #aaaaaa;
+}
+
+a:hover {
+  color: #aaaaaa;
 }
 
 nav {
-  border: solid #1b2b52;
-  border-width: 0 0 2px 0;
+  border: solid #202020;
+  border-width: 0 0 6px 0;
   margin-bottom: 0px;
   font-weight: bold;
 }
 
 nav ul {
   padding: 0px;
+  margin: 0px;
 }
 
-nav ul li.active
+nav ul a
 {
-  text-decoration: underline;
+  color: #aaaaaa;
+}
+
+nav ul li.active a
+{
+  border-bottom: 8px solid #d89f0d;
+  color: #d89f0d;
 }
 
 nav ul li {
@@ -66,7 +77,7 @@ nav ul li {
 }
 
 footer {
-  border: solid #1b2b52;
+  border: solid #171717;
   border-width: 2px 0 0 0;
 }
 
@@ -76,13 +87,17 @@ code {
 }
 
 pre.highlight {
-  background-color: white;
+  background-color: #ffffff;
   padding: 0.25rem;
+}
+
+div.content {
+  padding-top: 1em;
 }
 
 div.meta {
   font-style: italic;
-  color: #8860D0;
+  color: #797979;
 }
 
 div.youtube-container {
@@ -101,5 +116,34 @@ iframe.youtube-iframe {
 }
 
 p.image {
-  background-color: white
+  background-color: #ffffff;
+}
+
+.pdf-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f1c1';
+  font-size: 2em;
+  color: #D84727;
+}
+
+.youtube-icon::before {
+  font-family: 'Font Awesome 6 Brands';
+  content: '\f16a';
+  font-size: 2em;
+  color: #D84727;
+}
+
+.news-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f519';
+  font-size: em;
+  color: #D84727;
+}
+
+em {
+  color: #797979;
+}
+
+div.content > ul > li::marker {
+  color: #D84727
 }
