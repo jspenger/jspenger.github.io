@@ -14,9 +14,10 @@ Welcome to my personal website! Links to online profiles: [Twitter](https://twit
 </div>
 
 ## News
+* Aug 2025 -- New talk: **[Simple and Safe Pickling of Closures in Scala 3](https://speakerdeck.com/jspenger/simple-and-safe-pickling-of-closures-in-scala-3)** *@ Scala Days 2025*.
 * Dec 2024 -- New website is live!
-* Nov 2024 -- New repository: **[Sporks3](https://github.com/jspenger/sporks3)**: *simple and safe serialization/pickling library for closures in Scala 3 (an experimental fork of the [Spores3](https://github.com/phaller/spores3) library)*.
-* Sep 2024 -- New publication: **[Failure Transparency in Stateful Dataflow Systems](https://doi.org/10.4230/LIPIcs.ECOOP.2024.42)** *@ ECOOP 2024*.
+* Nov 2024 -- New repository: **[Sporks3](https://github.com/jspenger/sporks3)**: *simple and safe serialization/pickling library for closures in Scala 3 (an experimental fork of the [Spores3](https://github.com/phaller/spores3) library)*
+* Sep 2024 -- New publication: **[Failure Transparency in Stateful Dataflow Systems](https://doi.org/10.4230/LIPIcs.ECOOP.2024.42)** *@ ECOOP 2024*
 * Jan 2024 -- New publication: **[A Survey of Actor-Like Programming Models for Serverless Computing](https://doi.org/10.1007/978-3-031-51060-1_5)** *@ AOL 2024*
 
 ## Publications
@@ -59,6 +60,11 @@ Jonas Spenger.
 [[NBN]](https://nbn-resolving.org/urn:nbn:de:0297-zib-79165)
 
 ## Talks
+* **[[Slides]](https://speakerdeck.com/jspenger/simple-and-safe-pickling-of-closures-in-scala-3)**
+**Simple and Safe Pickling of Closures in Scala 3.**
+Jonas Spenger, Philipp Haller.
+*Scala Days 2025, 2025.*
+
 * **[[YouTube]](https://www.youtube.com/watch?v=Ctpif-uk7sw)**
 **Crossing the Boundaries of Stateful Streaming and Actors Using Serverless Portals.**
 Jonas Spenger.
